@@ -1,0 +1,485 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial';
+}
+
+li{
+	list-style: none;
+}
+
+body{
+	width: 100%;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 600px;
+	overflow: hidden;
+	background: url(images/new-york-city-336475.jpg);
+	background-size: cover;
+	color: white;
+}
+
+header nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	height: 140px;
+	padding: 20px;
+}
+
+.header-logo{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+header nav menu{
+	width: 39%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header nav menu li{
+	font-family: 'Brandon Text';
+}
+
+header nav menu li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+header section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 70%;
+	height: 100%;
+	padding: 120px;
+	padding-top: 100px;
+	align-items: center;
+}
+
+header section h1{
+	font: normal 58px 'Arial';
+	padding-bottom: 40px;
+}
+
+header section h2{
+	font: normal 24px 'Courier New';
+}
+
+header section button{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	height: 65px;
+	width: 230px;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+	border: 3px solid white;
+	border-radius: 3px;
+}
+
+header section button:hover{
+	cursor: pointer;
+	background: linear-gradient(to right, rgb(101 75 114), rgb(33 27 64));
+	box-shadow: 0 20px 10px -10px rgba(0,0,0,0.8);
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article{
+	background-color: white;
+	font-family: 'Brandon Text';
+	padding-left: 200px;
+	padding-right: 200px;
+	width: 100%;
+}
+
+article:nth-child(even){
+	background-color: rgb(250 250 250);
+}
+
+.article-standart{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	min-height: 420px;
+}
+
+.article-standart section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 260px;
+	width: 560px;
+}
+
+article section h1{
+	font-size: 54px;
+	font-weight: normal;
+	margin-left:  20px;
+}
+
+article section p{
+	line-height: 20px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+.article-standart aside{
+	width: 260px;
+	height: 260px;
+}
+
+.article-containers{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.article-containers-column{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 380px;
+	height: 420px;
+}
+
+.article-containers .mini-container{
+	height: 130px;
+	display: flex;
+	padding: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	flex-direction: row;
+}
+
+.mini-cnt-image{
+	height: 100%;
+	width: 25%;
+}
+
+.mini-cnt-text{
+	height: 100%;
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.mini-cnt-text p{
+	margin: 0;
+}
+
+.mini-cnt-image i{
+	width: 70px;
+	height: 70px;
+	color: white;
+	background-color: rgb(34 34 34);
+	border-radius: 100%;
+	text-align: center;
+	line-height: 70px;
+	vertical-align: middle;
+	font-size: 40px;
+}
+
+.article-commentaries{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.article-commentaries section{
+	width: 100%;
+}
+
+article .caption{
+	height: 100px;
+	text-align: center;
+}
+
+.article-commentaries .caption p{
+	font-size: 18px;
+}
+
+.article-comment{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	vertical-align: middle;
+	height: 265px;
+}
+
+.comment-block-left, .comment-block-right{
+	margin: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 600px;
+	height: 170px;
+	background-color: white;
+	border: 1px solid rgb(233 233 233);
+	border-radius: 3px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.comment-block-left::before {
+    content: ''; 
+    position: absolute; 
+    left: -30px;
+    height: 0;
+    top: 65px;
+    border: 15px solid transparent; 
+    border-right: 15px solid rgb(233 233 233); 
+  }
+  
+.comment-block-left::after {
+    content: ''; 
+    position: absolute; 
+    left: -29px;
+    height: 0;
+    top: 65px;
+    border: 15px solid transparent;
+    border-right: 15px solid white; 
+  }
+
+.comment-block-right::before {
+    content: ''; 
+    position: absolute; 
+    right: -30px;
+    height: 0;
+    top: 65px;
+    border: 15px solid transparent;
+    border-left: 15px solid rgb(233 233 233); 
+  }
+  
+.comment-block-right::after {
+    content: ''; 
+    position: absolute; 
+    right: -29px;
+    height: 0;
+    top: 65px;
+    border: 15px solid transparent; 
+    border-left: 15px solid white; 
+  }
+
+.foto-comment{
+	margin: 0;
+	border-radius: 100%;
+	background-color: rgb(34 34 34);
+	width: 220px;
+	height: 220px;
+}
+
+.article-comment p{
+	color: rgb(119 119 119);
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.article-comment .comment-authors{
+	font-size: 18px;
+	color: rgb(118 144 197);
+}
+
+.article-sponsors{
+	height: 155px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.article-sponsors img{
+	height: 40px;
+	width: auto;
+	filter: grayscale(100%);
+}
+
+.article-team{
+	background-color: rgb(17 17 17) !important;
+	color: white;
+	flex-direction: row;
+	align-items: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.team-people{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 400px;
+	align-items: center;
+}
+
+article > p{
+	text-align: center;
+	padding: 20px;
+	padding-left: 180px;
+	padding-right: 180px;
+	line-height: 25px;
+}
+
+.people-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.people-container h4{
+	margin: 4px;
+}
+
+.people-container h5{
+	margin: 4px;
+	font-weight: normal;
+}
+
+.people-cnt-image{
+	height: 230px;
+	width: 230px;
+	border: 5px solid white;
+	border-radius: 100%;
+	margin: 10px;
+}
+
+.people-cnt-icons{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.people-cnt-icons i{
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+	border: 3px solid white;
+	border-radius: 100%;
+	margin: 5px;
+}
+
+.people-cnt-icons i:hover{
+	background-color: white;
+	color: rgb(17 17 17);
+	cursor: pointer;
+}
+
+.contactus{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: rgb(118 144 197);
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.contactus-info, .contactus form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 450px;
+	height: 340px;
+}
+
+.cotactus-info p{
+	margin-right: 20px;
+}
+
+.contactus-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.contactus-container .column{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contactus-container .column a{
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+.contactus-container .column a:hover{
+	background-color: white;
+	border-radius: 5px;
+	color: rgb(118 144 197);
+	cursor: pointer;
+}
+
+.contactus-container .column a i{
+	font-size: 32px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+}
+
+form input{
+	height: 50px;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+form .message{
+	padding: 15px;
+	height: 210px;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+footer{
+	height: 80px;
+	width: 100%;
+	background-color: rgb(118 144 197);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+footer p{
+	height: 80px;
+	line-height: 80px;
+	font-size: 14px;
+	color: white;
+	width: 80%;
+	border-top: 1px solid rgb(135 160 210);
+}
